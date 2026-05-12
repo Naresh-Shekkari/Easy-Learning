@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+            </ul>
+        </section>
+
+        <section id="bestpractices" class="card">
+            <h2>🌟 Best Practices</h2>
+
+            <div class="best-grid">
+                <div class="best-item">
+                    <h3>Use Cloud VMs</h3>
+                    <p>Deploy containers on AWS EC2 or Azure VMs instead of maintaining physical servers.</p>
+                </div>
+
+                <div class="best-item">
+                    <h3>Understand SPOF</h3>
+                    <p>Docker Engine can become a Single Point of Failure if not managed properly.</p>
+                </div>
+
+                <div class="best-item">
+                    <h3>Monitor Storage</h3>
+                    <p>Docker layers consume storage. Clean unused images regularly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="interview" class="card">
+            <h2>🎤 Top Interview Questions</h2>
+
+            <div class="qa">
+                <h3>Q1: Why are containers lightweight?</h3>
+                <p>Containers share the host OS and only package application dependencies.</p>
+            </div>
+
+            <div class="qa">
+                <h3>Q2: What is the Docker lifecycle?</h3>
+                <p>Dockerfile → docker build → Docker Image → docker run → Running Container.</p>
+            </div>
+
+            <div class="qa">
+                <h3>Q3: Which is more secure?</h3>
+                <p>Virtual Machines provide stronger logical isolation compared to containers.</p>
+            </div>
+
+            <div class="qa">
+                <h3>Q4: Why deploy containers on cloud VMs?</h3>
+                <p>It removes physical server maintenance overhead and improves scalability.</p>
+            </div>
+        </section>
+
+        <section id="future" class="card">
+            <h2>🛠️ The Future – Buildah</h2>
+
+            <ul>
+                <li>Fixes Docker Engine SPOF issue</li>
+                <li>Reduces storage layer bloat</li>
+                <li>Uses shell scripts instead of Dockerfiles</li>
+                <li>Supports OCI-compliant images</li>
+                <li>Works perfectly with Podman & Skopeo</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made with ❤️ for DevOps & Docker Beginners</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
