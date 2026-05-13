@@ -1,71 +1,68 @@
 <!DOCTYPE html>
-            </ul>
-        </section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Website</title>
 
-        <section id="bestpractices" class="card">
-            <h2>🌟 Best Practices</h2>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f172a;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
-            <div class="best-grid">
-                <div class="best-item">
-                    <h3>Use Cloud VMs</h3>
-                    <p>Deploy containers on AWS EC2 or Azure VMs instead of maintaining physical servers.</p>
-                </div>
+        .container {
+            margin-top: 100px;
+        }
 
-                <div class="best-item">
-                    <h3>Understand SPOF</h3>
-                    <p>Docker Engine can become a Single Point of Failure if not managed properly.</p>
-                </div>
+        h1 {
+            font-size: 50px;
+            color: #38bdf8;
+        }
 
-                <div class="best-item">
-                    <h3>Monitor Storage</h3>
-                    <p>Docker layers consume storage. Clean unused images regularly.</p>
-                </div>
-            </div>
-        </section>
+        p {
+            font-size: 22px;
+        }
 
-        <section id="interview" class="card">
-            <h2>🎤 Top Interview Questions</h2>
+        button {
+            padding: 12px 25px;
+            border: none;
+            background: #38bdf8;
+            color: black;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
 
-            <div class="qa">
-                <h3>Q1: Why are containers lightweight?</h3>
-                <p>Containers share the host OS and only package application dependencies.</p>
-            </div>
+        button:hover {
+            background: #0ea5e9;
+        }
+    </style>
+</head>
 
-            <div class="qa">
-                <h3>Q2: What is the Docker lifecycle?</h3>
-                <p>Dockerfile → docker build → Docker Image → docker run → Running Container.</p>
-            </div>
+<body>
 
-            <div class="qa">
-                <h3>Q3: Which is more secure?</h3>
-                <p>Virtual Machines provide stronger logical isolation compared to containers.</p>
-            </div>
+    <div class="container">
+        <h1>🚀 Welcome to My Website</h1>
 
-            <div class="qa">
-                <h3>Q4: Why deploy containers on cloud VMs?</h3>
-                <p>It removes physical server maintenance overhead and improves scalability.</p>
-            </div>
-        </section>
+        <p>
+            Hosted using GitHub Pages
+        </p>
 
-        <section id="future" class="card">
-            <h2>🛠️ The Future – Buildah</h2>
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+    </div>
 
-            <ul>
-                <li>Fixes Docker Engine SPOF issue</li>
-                <li>Reduces storage layer bloat</li>
-                <li>Uses shell scripts instead of Dockerfiles</li>
-                <li>Supports OCI-compliant images</li>
-                <li>Works perfectly with Podman & Skopeo</li>
-            </ul>
-        </section>
+    <script>
+        function showMessage() {
+            alert("GitHub Pages Website Working Successfully!");
+        }
+    </script>
 
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>Made with ❤️ for DevOps & Docker Beginners</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
